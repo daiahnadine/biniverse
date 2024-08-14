@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/794a0de6a529290274465576a9a6990b?family=Block+Berthold+Regular" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BINIVERSE PH</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="images/bini logo.svg" alt="BINI LOGO">
+        <ul>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#merch">Merch</a></li>
+        </ul>
+        <div class="socials-container">
+            <img class="socials" src="images/ig icon.png" alt="ig-icon" onclick="window.location.href='https://www.instagram.com/bini_ph/?hl=en';">
+            <img class="socials" src="images/fb icon.webp" alt="fb-icon" onclick="window.location.href='https://www.facebook.com/BINIph.official/';">
+            <img class="socials" src="images/spotify icon.png" alt="spotify" onclick="window.location.href='https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga?si=kmI653v3RyWjBbg40Kt1Ag';">
+            <img class="socials" src="images/yt icon.png" alt="yt-icon" onclick="window.location.href='https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ';"> 
+        </div>
+    </div>
+    <div id="banner" class="banner" style="background-image: url('images/bini banner.png')"></div>
+    <div class="about">
+        <img id ="about" class="bini-about" src="images/bini about.png" alt="BINI ABOUT">
+        <div class="about-title">
+            <p>About</p>
+        </div>
+        <div class="about-details">
+            Filipino pop phenomenon BINI features 8 multi-talented members, Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. 
+            The girls have quickly become the biggest female Filipino artist in history, and second biggest artist overall in the Philippines, holding both the #1 & #2 spots on the top Filipino music charts simultaneously with the hits “Salamin, Salamin” and “Pantropiko.”
+            <br> BINI's sound is shaped by homegrown artists and global sensations alike. 
+            On the heels of their unprecedented growth in socials and in streaming listenership (30M +), the girls recently sold out their “BINIverse” tour in record-breaking time, and have been heralded as one of Teen Vogue's 2024 Girl Groups to watch!
+        </div>
+    </div>
+    <div class="banner-music" style="background-image: url('images/pink banner.jfif')"></div>
+    <div id="music" class="music">
+        <div class="music-title">
+            <p>Music</p>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <audio src="mp3/Huwag Muna Tayong Umuwi - BINI (Lyrics).mp3" preload="auto"></audio>
+            <img src="images/feel good album.jpg" alt="Feel Good Album" onclick="window.location.href='https://open.spotify.com/album/7H64wogfyQUcRqFZFbMV9S?si=uMp7WIfXRvuErQO9gj5opw';">
+            <div class="album-title">Feel Good</div>
+            <div class="album-details">Album | 2022 | 7 Songs</div>
+            <div class="play-button" onclick="playAudio('audio1')">Play Album</div>
+            <audio id="audio1" src="mp3/Huwag Muna Tayong Umuwi - BINI (Lyrics).mp3" preload="auto"></audio>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/pantropiko album.jpg" alt="Pantropiko Album" onclick="window.location.href='https://open.spotify.com/album/3NYOeU6Uwj2FP1Zz1rWVz8?si=vkAbA7zrT5K_1Eqr1QheGA';">
+            <div class="album-title">Pantropiko</div>
+            <div class="album-details">Single | 2023 | 1 Song</div>
+            <div class="play-button" onclick="playAudio('audio2')">Play Album</div>
+            <audio id="audio2" src="mp3/BINI - Pantropiko (Lyrics).mp3" preload="auto"></audio>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/talaarawan album.webp" alt="Talaarawan Album" onclick="window.location.href='https://open.spotify.com/album/2eT1XApzS0GmkJLMlCBdVv?si=EFMB-PTzSOOnYbre2NMcIw';">
+            <div class="album-title">Talaarawan</div>
+            <div class="album-details">Album | 2024 | 6 Songs</div>
+            <div class="play-button" onclick="playAudio('audio3')">Play Album</div>
+            <audio id="audio3" src="mp3/BINI - Salamin Salamin (Lyrics).mp3" preload="auto"></audio>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/born to win.webp" alt="Born to Win Album" onclick="window.location.href='https://open.spotify.com/album/28rgW6IXDsrk4YtTcFtGGK?si=C_WkFWWnSrqgdfkCf8HPsQ';">
+            <div class="album-title">Born To Win</div>
+            <div class="album-details">Album | 2021 | 12 Songs</div>
+            <div class="play-button" onclick="playAudio('audio4')">Play Album</div>
+            <audio id="audio4" src="mp3/Born To Win - BINI (Lyrics).mp3" preload="auto"></audio>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/karera song.webp" alt="Karera Album" onclick="window.location.href='https://open.spotify.com/album/6eG8V6yBx09xmexOLpcn9R?si=N8OKZpmERBqsdYkZWGXFyQ';">
+            <div class="album-title">Karera</div>
+            <div class="album-details">Single | 2023 | 1 Song</div>
+            <div class="play-button" onclick="playAudio('audio5')">Play Album</div>
+            <audio id="audio5" src="mp3/BINI - Karera (Lyrics).mp3" preload="auto"></audio>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/lagi cover.webp" alt="Lagi Album" onclick="window.location.href='https://open.spotify.com/album/7H64wogfyQUcRqFZFbMV9S?si=9C55BNMuQBehV3j3-Ruf6Q';">
+            <div class="album-title">Lagi</div>
+            <div class="album-details">Single | 2022 | 1 Song</div>
+            <div class="play-button" onclick="playAudio('audio6')">Play Album</div>
+            <audio id="audio6" src="mp3/Lagi - BINI (Lyrics).mp3" preload="auto"></audio>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <div class="banner-video" style="background-image: url('images/blue banner.png')"></div>
+    <div id="videos" class="videos">
+        <div class="videos-title">
+            <p>Videos</p>
+        </div>
+    </div>
+    <div class="video-slideshow-container">
+        <div class="myVideos fade">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/J1Ip2sC_lss?si=ZRzC1k-STfy5-_wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="myVideos fade">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/Zx31bB2vMns?si=ce6IWkGrHwuPR-jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="myVideos fade">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/QNV2DmBxChQ?si=Si-lFgvmm_IewGQj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
+        </div>
+        <div class="myVideos fade">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/eZfeW9WDwmA?si=zYPzn4UIcAOwV_dG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="myVideos fade">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/3aaDTSAYxg4?si=it4037nt5UxqtqJq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="myVideos fade">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/KyndoXN4_ns?si=rI8TYz7TldShh6Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="play-button" onclick="window.location.href='https://youtube.com/@biniph?si=PD75V4QcgplyJlQc';">More Videos</div>   
+        <a class="prev" onclick="plusVideoSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusVideoSlides(1)">&#10095;</a>
+        </div>
+    <br>
+    <div style="text-align:center">
+        <span class="video-dot" onclick="currentVideoSlide(1)"></span>
+        <span class="video-dot" onclick="currentVideoSlide(2)"></span>
+        <span class="video-dot" onclick="currentVideoSlide(3)"></span>
+        <span class="video-dot" onclick="currentVideoSlide(4)"></span>
+        <span class="video-dot" onclick="currentVideoSlide(5)"></span>
+        <span class="video-dot" onclick="currentVideoSlide(6)"></span>
+    </div>
+
+    <div id="profile" class="profile">
+        <div class="profile-title">
+            <p>Profile</p>
+        </div>
+    </div>
+    <div class="profile-container">
+        <div class="myProfile fade">
+            <img src="images/aiah.png" alt="Aiah" onclick="window.location.href='https://bini.fandom.com/wiki/Aiah';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/colet.png" alt="Colet" onclick="window.location.href='https://bini.fandom.com/wiki/Colet';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/maloi.png" alt="Maloi" onclick="window.location.href='https://bini.fandom.com/wiki/Maloi';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/gwen.png" alt="Gwen" onclick="window.location.href='https://bini.fandom.com/wiki/Gwen';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/stacey.png" alt="Stacey" onclick="window.location.href='https://bini.fandom.com/wiki/Stacey';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/mikha.png" alt="Mikha" onclick="window.location.href='https://bini.fandom.com/wiki/Mikha';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/jho.png" alt="Jhoanna" onclick="window.location.href='https://bini.fandom.com/wiki/Jhoanna';">
+        </div>
+        <div class="myProfile fade">
+            <img src="images/sheena.png" alt="Sheena" onclick="window.location.href='https://bini.fandom.com/wiki/Sheena';">
+        </div>
+        <a class="prev" onclick="plusProfileSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusProfileSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <span class="profile-dot" onclick="currentProfileSlide(1)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(2)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(3)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(4)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(5)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(6)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(7)"></span>
+        <span class="profile-dot" onclick="currentProfileSlide(8)"></span>
+    </div>
+
+    <div class="banner-merch" style="background-image: url('images/blue-bg.jfif')"></div>
+    <div id="merch" class="merch">
+        <div class="merch-title">
+            <p>Merch</p>
+        </div>
+    </div>
+    <div class="merch-container">
+        <div class="Merch fade">
+            <img src="images/merch.JPG" alt="Merch">
+        </div>
+        <div class="member-button" onclick="window.location.href='https://fandom.abs-cbn.com/bini';">Be An Exclusive Member</div> 
+    </div>
+    <div class="credits">
+        <p>Nadine D. | All Rights Reserved. </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

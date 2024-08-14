@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-left: 550px;
+    margin-top: -35px;
+    margin-right: 550px;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+.socials-container {
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.banner {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -20px;
+}
+
+.bini-about {
+    height: 50%;
+    width: 50%;
+    z-index: -1;
+    margin-top: 950px;
+    margin-left: 50px;
+}
+
+.about-title p {
+    max-width: 1200px;
+    margin-left: 990px;
+    margin-top: -880px;
+    font-size: 100px;
+    font-family: "Alex Brush", cursive;
+    font-weight: bold;
+}
+
+.about-details {
+    margin-left: 990px;
+    margin-top: 5px;
+    font-size: 35px;
+    font-family: "Schoolbell", cursive;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.5;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+.music-title p {
+    max-width: 1200px;
+    margin-left: 760px;
+    margin-top: 120px;
+    font-size: 150px;
+    font-family: "Alex Brush", cursive;
+    font-weight: bold;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    float: left;
+    width: 100%;
+}
+
+.mySlides img {
+    width: 500px;
+    height: 500px;
+    margin-left: 250px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mySlides img:hover {
+    transform: translateY(-15px); /* Move up slightly on hover */
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.prev, .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        color: rgb(253, 156, 205);
+        font-size: 50px;
+        transition: 0.6s ease;
+        user-select: none;
+        display: flex;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(207, 98, 162, 0.8);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.album-title {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.album-details {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.banner-music {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 115px;
+}
+
+.banner-video {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 300px;
+}
+
+.banner-merch {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 150px;
+}
+
+.play-button {
+    background-color: #ED83B5; /* Pink color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 435px;
+    display: inline-block;
+}
+
+.play-button:hover {
+    background-color: #ff4f9a; /* Darker pink on hover */
+}
+
+.videos-title p {
+    max-width: 1200px;
+    margin-left: 760px;
+    margin-top: 300px;
+    font-size: 150px;
+    font-family: "Alex Brush", cursive;
+    font-weight: bold;
+}
+
+.video-slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.myVideos {
+    width: 100%;
+}
+
+.myVideos iframe {
+    margin-left: 130px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myVideos iframe:hover {
+    transform: translateY(-15px); /* Move up slightly on hover */
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.video-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(207, 98, 162, 0.8);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.video-dot-active {
+    background-color: #717171;
+}
+
+.profile-title p {
+    max-width: 1200px;
+    margin-left: 760px;
+    margin-top: 250px;
+    font-size: 150px;
+    font-family: "Alex Brush", cursive;
+    font-weight: bold;
+}
+
+.profile-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.myProfile {
+    width: 100%;
+}
+
+.myProfile img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    width: 1000px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myProfile img:hover {
+    transform: translateY(-15px); /* Move up slightly on hover */
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.profile-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(207, 98, 162, 0.8);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot, .profile-dot:hover {
+    background-color: #717171;
+}
+
+.merch-title p {
+    max-width: 1200px;
+    margin-left: 760px;
+    margin-top: 200px;
+    font-size: 150px;
+    font-family: "Alex Brush", cursive;
+    font-weight: bold;
+}
+
+.merch-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Merch {
+    width: 100%;
+}
+
+.Merch img {
+    width: 800px;
+    height: 400px;
+    margin-top: 5px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Merch img:hover {
+    transform: translateY(-15px); /* Move up slightly on hover */
+    box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.member-button {
+    background-color: #ED83B5; /* Pink color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 400px;
+    display: inline-block;
+}
+
+.credits p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+
+ul li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+    font-family: 'Poppins', sans-serif; /* Use the desired font family */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+ul li a:hover {
+    color: #ff4081; /* Change color on hover */
+}
